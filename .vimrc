@@ -1,9 +1,9 @@
 " pathogen.vim
-call pathogen#infect()
-syntax on
+execute pathogen#infect()
 filetype plugin indent on
 
 " vim editor
+syntax on
 set ruler
 set showmode
 set nu
