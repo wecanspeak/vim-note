@@ -20,6 +20,28 @@ set expandtab
 "" omnicomplete
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+"" copy & paste & cut
+map <C-C> "ty
+map <C-V> "tp
+map <C-X> "tx
+imap <C-C> <ESC>l"tyi
+imap <C-V> <ESC>l"tpi
+imap <C-X> <ESC>l"txi
+"" enable and disable mouse use
+set mouse=a
+map <F3> :call ToggleMouse() <CR>
+function ToggleMouse()
+    if &mouse == 'a'
+        set mouse=
+        set nonumber
+        echo "Mouse usage disabled"
+    else
+        set mouse=a
+        set number
+        echo "Mouse usage enabled"
+    endif
+endfunction
+
 
 " ===================
 " debug print map key
