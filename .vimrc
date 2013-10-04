@@ -17,9 +17,14 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set nowrap
 "" omnicomplete
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+"" folding
+nmap <F5> :setlocal foldmethod=syntax <CR>
+nmap <F6> zO
+nmap <F7> zC
 "" copy & paste & cut
 map <C-C> "ty
 map <C-V> "tp
@@ -29,7 +34,7 @@ imap <C-V> <ESC>l"tpi
 imap <C-X> <ESC>l"txi
 "" enable and disable mouse use
 set mouse=a
-map <F3> :call ToggleMouse() <CR>
+map <F4> :call ToggleMouse() <CR>
 function ToggleMouse()
     if &mouse == 'a'
         set mouse=
@@ -115,3 +120,9 @@ endif
 " taglist
 " =======
 "let Tlist_Auto_Open = 1
+map <F3> :TlistToggle<CR>
+
+" ========
+" NERDTred
+" ========
+map <F2> :NERDTreeToggle<CR>
