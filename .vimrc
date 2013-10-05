@@ -28,10 +28,10 @@ nmap <F7> zC
 "" copy & paste & cut
 map <C-C> "ty
 map <C-V> "tp
-map <C-X> "tx
+map x<C-X> "tx  " reserve <C-X> for auto completion
 imap <C-C> <ESC>l"tyi
 imap <C-V> <ESC>l"tpi
-imap <C-X> <ESC>l"txi
+imap x<C-X> <ESC>l"txi " reserve <C-X> for auto completion
 "" enable and disable mouse use
 set mouse=a
 map <F4> :call ToggleMouse() <CR>
@@ -107,6 +107,6 @@ endif
 map <F3> :TlistToggle<CR>
 
 " ========
-" NERDTred
+" NERDTree
 " ========
 map <F2> :NERDTreeToggle<CR>
