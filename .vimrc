@@ -35,7 +35,7 @@ imap <C-X> <ESC>l"txi
 "" enable and disable mouse use
 set mouse=a
 map <F4> :call ToggleMouse() <CR>
-function ToggleMouse()
+function! ToggleMouse()
     if &mouse == 'a'
         set mouse=
         set nonumber
@@ -65,8 +65,6 @@ nnoremap <C-tab> :tabnext<CR>
 " ==================
 nmap + <C-W>+
 nmap - <C-W>-
-nmap } <C-w>>
-nmap { <C-w><
 nmap <C-j> <C-w>j<C-w>_
 nmap <C-k> <C-w>k<C-w>_
 
@@ -80,23 +78,10 @@ endfunction
 
 map! <F2> :call TrimWhiteSpace()<CR>
 
-" ==================================
-" highlight class and function names
-" ==================================
-syn match    cCustomParen    "(" contains=cParen,cCppParen
-syn match    cCustomFunc     "\w\+\s*(" contains=cCustomParen
-syn match    cCustomScope    "::"
-syn match    cCustomClass    "\w\+\s*::" contains=cCustomScope
-
-hi def link cCustomFunc  Function
-hi def link cCustomClass Function
-
-
 " ======
 " cscope
 " ======
 if has("cscope")
-set csprg=/usr/bin/cscope8a
 set csto=0
 set cst
 set nocsverb
@@ -119,7 +104,6 @@ endif
 " =======
 " taglist
 " =======
-"let Tlist_Auto_Open = 1
 map <F3> :TlistToggle<CR>
 
 " ========
