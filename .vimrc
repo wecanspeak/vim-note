@@ -22,7 +22,7 @@ set nowrap
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 "" folding
-nmap <F5> :setlocal foldmethod=syntax <CR>
+nmap <F5> :setlocal foldmethod=syntax<CR>
 nmap <F6> zO
 nmap <F7> zC
 "" copy & paste & cut
@@ -34,7 +34,7 @@ imap <C-V> <ESC>l"tpi
 imap x<C-X> <ESC>l"txi " reserve <C-X> for auto completion
 "" enable and disable mouse use
 set mouse=a
-map <F4> :call ToggleMouse() <CR>
+nnoremap <F4> :call ToggleMouse() <CR>
 function! ToggleMouse()
     if &mouse == 'a'
         set mouse=
@@ -46,7 +46,12 @@ function! ToggleMouse()
         echo "Mouse usage enabled"
     endif
 endfunction
-
+"" swap : & ;
+nnoremap ; :
+nnoremap : ;
+"" search result at center
+map N Nzz
+map n nzz
 
 " ===================
 " debug print map key
@@ -58,7 +63,6 @@ nmap g<C-D> oPRINTF("_ENZ_ %s %d\n",__FILE__,__LINE__);
 " ============
 nnoremap <C-h> gT
 nnoremap <C-l> gt
-nnoremap <C-tab> :tabnext<CR>
 
 " ==================
 " adjust window size
@@ -75,7 +79,6 @@ function TrimWhiteSpace()
 	%s/\s*$//
     ''
 endfunction
-
 map! <F2> :call TrimWhiteSpace()<CR>
 
 " ======
@@ -104,9 +107,9 @@ endif
 " =======
 " taglist
 " =======
-map <F3> :TlistToggle<CR>
+nnoremap <F3> :TlistToggle<CR>
 
 " ========
 " NERDTree
 " ========
-map <F2> :NERDTreeToggle<CR>
+nnoremap <F2> :NERDTreeToggle<CR>
