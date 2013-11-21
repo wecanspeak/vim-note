@@ -72,9 +72,9 @@ nmap - <C-W>-
 nmap <C-j> <C-w>j<C-w>_
 nmap <C-k> <C-w>k<C-w>_
 
-" =====================
-" remove trailing space
-" =====================
+" ==========================
+" remove trailing whitespace
+" ==========================
 function TrimWhiteSpace()
 	%s/\s*$//
     ''
@@ -117,7 +117,7 @@ nnoremap <F2> :NERDTreeToggle<CR>
 " ============
 " CoffeeScript
 " ============
-" auto ident
+" auto indent
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 " auto compile
 autocmd BufWritePost,FileWritePost *.coffee silent !coffee -c <afile>
