@@ -14,11 +14,12 @@ Plugins for source insight like
 * [CCTree](http://www.vim.org/scripts/script.php?script_id=2368) - call graph
 * [Mark](http://www.vim.org/scripts/script.php?script_id=2666) - multiple highlight
 
+Useful plugins
+==============
+* [vim-pathogen](https://github.com/tpope/vim-pathogen) - install plugin happily
+* [CtrlP](https://github.com/kien/ctrlp.vim) - find files quickly
+* [vim-powerline](https://github.com/Lokaltog/vim-powerline) - powerful status line
+
 Syntax
 ======
 * [c.vim](http://www.vim.org/scripts/script.php?script_id=3064) - function highlight
-
-
-Reference
-=========
-* [vim-pathogen](https://github.com/tpope/vim-pathogen)
