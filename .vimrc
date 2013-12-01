@@ -1,18 +1,10 @@
-" ============
-" pathogen.vim
-" ============
-execute pathogen#infect()
-filetype plugin indent on
-
-" ==========
-" vim editor
-" ==========
+" [ VIM EDITOR ] ================================== {{{1
 syntax on
+colorscheme darkblue
 set ruler
 set showmode
 set nu
 set hlsearch
-colorscheme darkblue
 set smartindent
 set tabstop=4
 set shiftwidth=4
@@ -22,16 +14,16 @@ set nowrap
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 "" folding
-nmap <F5> :setlocal foldmethod=syntax<CR>
-nmap <F6> zO
-nmap <F7> zC
+nnoremap <F5> :setlocal foldmethod=syntax<CR>
+nnoremap <F6> zO
+nnoremap <F7> zC
 "" copy & paste & cut
-map <C-C> "ty
-map <C-C><C-C> "tp
-map x<C-X> "tx  " reserve <C-X> for auto completion
-imap <C-C> <ESC>l"tyi
-imap <C-C><C-C> <ESC>l"tpi
-imap x<C-X> <ESC>l"txi " reserve <C-X> for auto completion
+nnoremap <C-C> "ty
+nnoremap <C-C><C-C> "tp
+nnoremap x<C-X> "tx  " reserve <C-X> for auto completion
+inoremap <C-C> <ESC>l"tyi
+inoremap <C-C><C-C> <ESC>l"tpi
+inoremap x<C-X> <ESC>l"txi " reserve <C-X> for auto completion
 "" enable and disable mouse use
 set mouse=a
 nnoremap <F4> :call ToggleMouse() <CR>
@@ -46,44 +38,62 @@ function! ToggleMouse()
         echo "Mouse usage enabled"
     endif
 endfunction
-"" jk = ESC
-inoremap jk <ESC>
-
 "" search result at center
-map N Nzz
-map n nzz
-
-" ===================
-" debug print map key
-" ===================
-nmap g<C-D> oPRINTF("_ENZ_ %s %d\n",__FILE__,__LINE__);
-
-" ============
-" tab switcher
-" ============
+nnoremap N Nzz
+nnoremap n nzz
+"" ESC mapping
+inoremap jk <ESC>
+"" tab switcher
 nnoremap <C-h> gT
 nnoremap <C-l> gt
-
-" ==================
-" adjust window size
-" ==================
-nmap + <C-W>+
-nmap - <C-W>-
-nmap <C-j> <C-w>j<C-w>_
-nmap <C-k> <C-w>k<C-w>_
-
-" ==========================
-" remove trailing whitespace
-" ==========================
+"" adjust window size
+nnoremap + <C-W>+
+nnoremap - <C-W>-
+nnoremap <C-j> <C-w>j<C-w>_
+nnoremap <C-k> <C-w>k<C-w>_
+"" remove trailing space
 function TrimWhiteSpace()
 	%s/\s*$//
     ''
 endfunction
-map! <F2> :call TrimWhiteSpace()<CR>
+inoremap <F2> <ESC>:call TrimWhiteSpace()<CR>
+" disable arrow key, enhace HJKL muscle memory
+noremap <UP> <NOP>
+noremap <DOWN> <NOP>
+noremap <RIGHT> <NOP>
+noremap <LEFT> <NOP>
+inoremap <UP> <NOP>
+inoremap <DOWN> <NOP>
+inoremap <RIGHT> <NOP>
+inoremap <LEFT> <NOP>
+" set fold type
+"autocmd BufNewFile,BufReadPost $MYVIMRC setlocal foldmethod=marker
 
-" ======
-" cscope
-" ======
+" [ PLUGINS ] ===================================== {{{1
+" pathogen ---------------------------------------- {{{2
+execute pathogen#infect()
+filetype plugin indent on
+" taglist ----------------------------------------- {{{2
+nnoremap <F3> :TlistToggle<CR>
+" nerdtree ---------------------------------------- {{{2
+nnoremap <F2> :NERDTreeToggle<CR>
+" powerline --------------------------------------- {{{2
+set t_Co=256
+set term=xterm-256color
+" CtrlP ------------------------------------------- {{{2
+let g:ctrlp_map = '<c-f>'
+
+
+" [ LANGUAGES ] =================================== {{{1
+" CoffeeScript ------------------------------------ {{{2
+"" auto ident
+autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+"" auto compile
+autocmd BufWritePost,FileWritePost *.coffee silent !coffee -c <afile> 
+
+
+" [ UTILITIES ] =================================== {{{1
+" cscope ------------------------------------------ {{{2
 if has("cscope")
 set csto=0
 set cst
@@ -104,20 +114,4 @@ map g<C-]> :cs find c <C-R>=expand("<cword>")<CR><CR>
 map g<C-\> :cs find s <C-R>=expand("<cword>")<CR><CR>
 endif
 
-" =======
-" taglist
-" =======
-nnoremap <F3> :TlistToggle<CR>
 
-" ========
-" NERDTree
-" ========
-nnoremap <F2> :NERDTreeToggle<CR>
-
-" ============
-" CoffeeScript
-" ============
-" auto indent
-autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
-" auto compile
-autocmd BufWritePost,FileWritePost *.coffee silent !coffee -c <afile>
