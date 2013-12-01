@@ -46,9 +46,9 @@ function! ToggleMouse()
         echo "Mouse usage enabled"
     endif
 endfunction
-"" swap : & ;
-nnoremap ; :
-nnoremap : ;
+"" jk = ESC
+inoremap jk <ESC>
+
 "" search result at center
 map N Nzz
 map n nzz
