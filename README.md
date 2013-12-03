@@ -1,7 +1,7 @@
 vimrc
 =====
 
-My .vimrc
+Note some useful vim stuff.
 
 
 Plugins for source insight like
@@ -17,9 +17,15 @@ Plugins for source insight like
 Useful plugins
 ==============
 * [vim-pathogen](https://github.com/tpope/vim-pathogen) - install plugin happily
-* [CtrlP](https://github.com/kien/ctrlp.vim) - find files quickly
 * [vim-powerline](https://github.com/Lokaltog/vim-powerline) - powerful status line
+* [CtrlP](https://github.com/kien/ctrlp.vim) - find files quickly
+* [snipmate](https://github.com/msanders/snipmate.vim) - snippet 
 
 Syntax
 ======
 * [c.vim](http://www.vim.org/scripts/script.php?script_id=3064) - function highlight
+ 
+Colorscheme
+===========
+* [seoul256](https://github.com/junegunn/seoul256.vim)
+
