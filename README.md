@@ -1,4 +1,3 @@
-
 Note some useful vim stuff.
 
 
@@ -22,6 +21,7 @@ Note some useful vim stuff.
 * [c.vim](http://www.vim.org/scripts/script.php?script_id=3064) - function highlight
  
 ## Colorscheme
+* [vivify](http://bytefluent.com/devify/) - online vim colorscheme generator
 * [seoul256](https://github.com/junegunn/seoul256.vim)
 
 ## Misc
