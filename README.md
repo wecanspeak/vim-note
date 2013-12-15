@@ -19,6 +19,7 @@ Note some useful vim stuff.
 
 ## Syntax
 * [c.vim](http://www.vim.org/scripts/script.php?script_id=3064) - function highlight
+* [TagHighlight](https://bitbucket.org/abudden/taghighlight) - highlight class, types, etc.
  
 ## Colorscheme
 * [vivify](http://bytefluent.com/devify/) - online vim colorscheme generator
