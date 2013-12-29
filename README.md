@@ -25,6 +25,10 @@ Note some useful vim stuff.
 * [vivify](http://bytefluent.com/devify/) - online vim colorscheme generator
 * [seoul256](https://github.com/junegunn/seoul256.vim)
 
+## Language specific
+### Javascript
+* [JSHint](https://github.com/wookiehangover/jshint.vim) - check javascript syntax
+
 ## Misc
 ### svn diff via vimdiff
 1. Create `svndiff` as [svndiff](https://gist.github.com/wecanspeak/7940388), let it be executable.
