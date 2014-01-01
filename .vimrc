@@ -24,6 +24,12 @@ nnoremap x<C-X> "tx  " reserve <C-X> for auto completion
 inoremap <C-C> <ESC>l"tyi
 inoremap <C-C><C-C> <ESC>l"tpi
 inoremap x<C-X> <ESC>l"txi " reserve <C-X> for auto completion
+"" copy&paste lines cross vim instances
+nnoremap <C-L> :w! ~/.vimbuffer 
+nnoremap <C-L><C-L> :r ~/.vimbuffer
+vnoremap <C-L> :w! ~/.vimbuffer 
+vnoremap <C-L><C-L> :r ~/.vimbuffer
+
 "" enable and disable mouse use
 set mouse=a
 nnoremap <F4> :call ToggleMouse() <CR>
