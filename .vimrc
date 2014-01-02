@@ -25,10 +25,10 @@ inoremap <C-C> <ESC>l"tyi
 inoremap <C-C><C-C> <ESC>l"tpi
 inoremap x<C-X> <ESC>l"txi " reserve <C-X> for auto completion
 "" copy&paste lines cross vim instances
-nnoremap <C-L> :w! ~/.vimbuffer 
-nnoremap <C-L><C-L> :r ~/.vimbuffer
-vnoremap <C-L> :w! ~/.vimbuffer 
-vnoremap <C-L><C-L> :r ~/.vimbuffer
+nnoremap <C-L> :w! ~/.vimbuffer<CR>
+nnoremap <C-L><C-L> :r ~/.vimbuffer<CR>
+vnoremap <C-L> :w! ~/.vimbuffer<CR>
+vnoremap <C-L><C-L> :r ~/.vimbuffer<CR>
 
 "" enable and disable mouse use
 set mouse=a
