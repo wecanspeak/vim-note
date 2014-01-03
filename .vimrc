@@ -18,9 +18,9 @@ nnoremap <F5> :setlocal foldmethod=syntax<CR>
 nnoremap <F6> zO
 nnoremap <F7> zC
 "" copy & paste & cut
-nnoremap <C-C> "ty
-nnoremap <C-C><C-C> "tp
-nnoremap x<C-X> "tx  " reserve <C-X> for auto completion
+noremap <C-C> "ty
+noremap <C-C><C-C> "tp
+noremap x<C-X> "tx  " reserve <C-X> for auto completion
 inoremap <C-C> <ESC>l"tyi
 inoremap <C-C><C-C> <ESC>l"tpi
 inoremap x<C-X> <ESC>l"txi " reserve <C-X> for auto completion
