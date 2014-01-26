@@ -29,6 +29,9 @@ nnoremap <C-L> :w! ~/.vimbuffer<CR>
 nnoremap <C-L><C-L> :r ~/.vimbuffer<CR>
 vnoremap <C-L> :w! ~/.vimbuffer<CR>
 vnoremap <C-L><C-L> :r ~/.vimbuffer<CR>
+"" scoll in insert mode
+inoremap <C-E> <C-X><C-E>
+inoremap <C-Y> <C-X><C-Y>
 
 "" enable and disable mouse use
 set mouse=a
