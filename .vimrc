@@ -121,8 +121,8 @@ set cscopequickfix=s-,g-,c-,d-,t-,e-,f-,i-
 "" Find C symbol and calling function
 map g<C-]> :cs find c <C-R>=expand("<cword>")<CR><CR>
 map g<C-\> :cs find s <C-R>=expand("<cword>")<CR><CR>
-nnoremap <C-N> :cnext<CR>
-nnoremap <C-P> :cprev<CR>
+nnoremap <C-N> :cnext<CR>zz
+nnoremap <C-P> :cprev<CR>zz
 endif
 
 
