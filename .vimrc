@@ -14,9 +14,10 @@ set nowrap
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 "" folding
-nnoremap <F5> :setlocal foldmethod=syntax<CR>
-nnoremap <F6> zO
-nnoremap <F7> zC
+autocmd FileType c nnoremap <F5> :setlocal foldmethod=syntax<CR>
+nnoremap <F5> :setlocal foldmethod=marker<CR>
+nnoremap <F6> za
+map <3-LeftMouse> za
 "" copy & paste & cut
 noremap <C-C> "ty
 noremap <C-C><C-C> "tp
