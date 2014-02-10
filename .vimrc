@@ -1,6 +1,5 @@
 " [ VIM EDITOR ] ================================== {{{1
 syntax on
-colorscheme darkblue
 set ruler
 set showmode
 set nu
@@ -10,13 +9,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set nowrap
-"" omnicomplete
 filetype plugin on
-set omnifunc=syntaxcomplete#Complete
 "" folding
 autocmd FileType c nnoremap <F5> :setlocal foldmethod=syntax<CR>
 nnoremap <F5> :setlocal foldmethod=marker<CR>
-nnoremap <F6> za
+nnoremap <space> za
 map <3-LeftMouse> za
 "" copy & paste & cut
 noremap <C-C> "ty
@@ -33,7 +30,6 @@ vnoremap <C-L><C-L> :r ~/.vimbuffer<CR>
 "" scoll in insert mode
 inoremap <C-E> <C-X><C-E>
 inoremap <C-Y> <C-X><C-Y>
-
 "" enable and disable mouse use
 set mouse=a
 nnoremap <F4> :call ToggleMouse() <CR>
@@ -78,6 +74,19 @@ inoremap <RIGHT> <NOP>
 inoremap <LEFT> <NOP>
 " set fold type
 "autocmd BufNewFile,BufReadPost $MYVIMRC setlocal foldmethod=marker
+" quick edit
+nnoremap <leader>vh :exec "vertical help ".expand("<cword>")<CR>
+nnoremap <leader>vr :vs $MYVIMRC<CR>
+" typo
+command! -bang Q q<bang>
+command! -bang W w<bang>
+command! -bang X x<bang>
+command! -bang QA qa<bang>
+command! -bang Qa qa<bang>
+command! -bang Wa wa<bang>
+command! -bang WA wa<bang>
+command! -bang Xa xa<bang>
+command! -bang XA xa<bang>
 
 " [ PLUGINS ] ===================================== {{{1
 " pathogen ---------------------------------------- {{{2
