@@ -87,6 +87,8 @@ command! -bang Wa wa<bang>
 command! -bang WA wa<bang>
 command! -bang Xa xa<bang>
 command! -bang XA xa<bang>
+" show invisibles
+set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\
 
 " [ PLUGINS ] ===================================== {{{1
 " pathogen ---------------------------------------- {{{2
