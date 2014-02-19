@@ -16,6 +16,8 @@ Note some useful vim stuff.
 * [CtrlP](https://github.com/kien/ctrlp.vim) - find files quickly
 * [snipmate](https://github.com/msanders/snipmate.vim) - snippet 
 * [easymotion](https://github.com/Lokaltog/vim-easymotion?source=c) - let cursor move like mouse
+* [MatchTag](https://github.com/gregsexton/MatchTag) - highlight matched html tag
+* [indent-guides](https://github.com/nathanaelkane/vim-indent-guides) - show indent lines
 
 ## Syntax
 * [c.vim](http://www.vim.org/scripts/script.php?script_id=3064) - function highlight
