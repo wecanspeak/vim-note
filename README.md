@@ -19,10 +19,12 @@ Note some useful vim stuff.
 * [MatchTag](https://github.com/gregsexton/MatchTag) - highlight matched html tag
 * [indent-guides](https://github.com/nathanaelkane/vim-indent-guides) - show indent lines
 * [matchit](http://vim.sourceforge.net/scripts/script.php?script_id=39) - % jump between tags
+* [syntastic](https://github.com/scrooloose/syntastic) - check syntax on the fly
 
 ## Syntax
 * [c.vim](http://www.vim.org/scripts/script.php?script_id=3064) - function highlight
 * [TagHighlight](https://bitbucket.org/abudden/taghighlight) - highlight class, types, etc.
+
  
 ## Colorscheme
 * [vivify](http://bytefluent.com/devify/) - online vim colorscheme generator
