@@ -18,6 +18,7 @@ Note some useful vim stuff.
 * [easymotion](https://github.com/Lokaltog/vim-easymotion?source=c) - let cursor move like mouse
 * [MatchTag](https://github.com/gregsexton/MatchTag) - highlight matched html tag
 * [indent-guides](https://github.com/nathanaelkane/vim-indent-guides) - show indent lines
+* [matchit](http://vim.sourceforge.net/scripts/script.php?script_id=39) - % jump between tags
 
 ## Syntax
 * [c.vim](http://www.vim.org/scripts/script.php?script_id=3064) - function highlight
