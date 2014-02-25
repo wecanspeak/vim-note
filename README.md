@@ -21,18 +21,23 @@ Note some useful vim stuff.
 * [matchit](http://vim.sourceforge.net/scripts/script.php?script_id=39) - % jump between tags
 * [syntastic](https://github.com/scrooloose/syntastic) - check syntax on the fly
 
+## Interesting plugins
+* [vimwiki](https://github.com/vimwiki/vimwiki) - wiki like noting
+* [calendar.vim](https://github.com/itchyny/calendar.vim) - calendar in vim
+
 ## Syntax
 * [c.vim](http://www.vim.org/scripts/script.php?script_id=3064) - function highlight
 * [TagHighlight](https://bitbucket.org/abudden/taghighlight) - highlight class, types, etc.
 
- 
 ## Colorscheme
 * [vivify](http://bytefluent.com/devify/) - online vim colorscheme generator
 * [seoul256](https://github.com/junegunn/seoul256.vim)
+* [Vim Color Scheme Test](https://code.google.com/p/vimcolorschemetest/)
 
 ## Language specific
 ### Javascript
 * [JSHint](https://github.com/wookiehangover/jshint.vim) - check javascript syntax
+
 
 ## Misc
 ### svn diff via vimdiff
