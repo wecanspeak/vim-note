@@ -11,8 +11,6 @@ set expandtab
 set nowrap
 filetype plugin on
 "" folding
-autocmd FileType c nnoremap <F5> :setlocal foldmethod=syntax<CR>
-nnoremap <F5> :setlocal foldmethod=marker<CR>
 nnoremap <space> za
 map <3-LeftMouse> za
 "" copy & paste & cut
@@ -32,7 +30,7 @@ inoremap <C-E> <C-X><C-E>
 inoremap <C-Y> <C-X><C-Y>
 "" enable and disable mouse use
 set mouse=a
-nnoremap <F4> :call ToggleMouse() <CR>
+nnoremap <F5> :call ToggleMouse() <CR>
 function! ToggleMouse()
     if &mouse == 'a'
         set mouse=
@@ -55,8 +53,6 @@ nnoremap <C-l> gt
 "" adjust window size
 nnoremap + <C-W>+
 nnoremap - <C-W>-
-nnoremap <C-j> <C-w>j<C-w>_
-nnoremap <C-k> <C-w>k<C-w>_
 "" remove trailing space
 function TrimWhiteSpace()
 	%s/\s*$//
@@ -75,12 +71,11 @@ inoremap <LEFT> <NOP>
 " set fold type
 "autocmd BufNewFile,BufReadPost $MYVIMRC setlocal foldmethod=marker
 " quick edit
-nnoremap <leader>vh :exec "vertical help ".expand("<cword>")<CR>
-nnoremap <leader>vr :vs $MYVIMRC<CR>
+nnoremap <leader>hh :exec "vertical help ".expand("<cword>")<CR>
+nnoremap <leader>rr :vs $MYVIMRC<CR>
 " typo
 command! -bang Q q<bang>
 command! -bang W w<bang>
-command! -bang X x<bang>
 command! -bang QA qa<bang>
 command! -bang Qa qa<bang>
 command! -bang Wa wa<bang>
@@ -96,6 +91,8 @@ execute pathogen#infect()
 filetype plugin indent on
 " taglist ----------------------------------------- {{{2
 nnoremap <F3> :TlistToggle<CR>
+" tagbar ------------------------------------------ {{{2
+nnoremap <F4> :TagbarToggle<CR>
 " nerdtree ---------------------------------------- {{{2
 nnoremap <F2> :NERDTreeToggle<CR>
 " powerline --------------------------------------- {{{2
