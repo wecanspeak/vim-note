@@ -10,6 +10,7 @@ Note some useful vim stuff.
 * [srcexpl](http://www.vim.org/scripts/script.php?script_id=2179) - real time definition view
 * [cctree](http://www.vim.org/scripts/script.php?script_id=2368) - call graph
 * [mark](http://www.vim.org/scripts/script.php?script_id=2666) - multiple highlight
+* [minibufexpl](https://github.com/fholgado/minibufexpl.vim?source=c) - show buffers (files) list
 
 ## Useful plugins
 * [pathogen](https://github.com/tpope/vim-pathogen) - install plugin happily
@@ -22,6 +23,7 @@ Note some useful vim stuff.
 * [matchit](http://vim.sourceforge.net/scripts/script.php?script_id=39) - % jump between tags
 * [syntastic](https://github.com/scrooloose/syntastic) - check syntax on the fly
 * [vim-signature](https://github.com/kshenoy/vim-signature) - show marks
+
 
 ## Interesting plugins
 * [vimwiki](https://github.com/vimwiki/vimwiki) - wiki like noting
