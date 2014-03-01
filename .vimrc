@@ -84,6 +84,9 @@ command! -bang Xa xa<bang>
 command! -bang XA xa<bang>
 " show invisibles
 set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\
+" buffer traverse
+nnoremap <F9> :bn<CR>
+nnoremap <F10> :bp<CR>
 
 " [ PLUGINS ] ===================================== {{{1
 " pathogen ---------------------------------------- {{{2
