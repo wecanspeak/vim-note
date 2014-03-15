@@ -36,6 +36,7 @@ Note some useful vim stuff.
 ## Colorscheme
 * [vivify](http://bytefluent.com/devify/) - online vim colorscheme generator
 * [seoul256](https://github.com/junegunn/seoul256.vim)
+* [xoria256](http://www.vim.org/scripts/script.php?script_id=2140)
 * [Vim Color Scheme Test](https://code.google.com/p/vimcolorschemetest/)
 
 ## Language specific
