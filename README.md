@@ -50,3 +50,6 @@ Note some useful vim stuff.
 2. Place `svndiff` to accessible location like `~/bin/svndiff` or `/usr/local/bin/svndiff`.
 3. In `~/.subversion/config`, assign `diff-cmd` to `svndiff` path. 
 4. Done, try it by `svn diff` command.
+
+### build minimum friendly vim environment
+* source [vimenv.sh](https://github.com/wecanspeak/vim-note/blob/master/vimenv.sh)
