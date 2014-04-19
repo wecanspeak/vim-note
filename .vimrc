@@ -98,11 +98,10 @@ nnoremap <F3> :TlistToggle<CR>
 nnoremap <F4> :TagbarToggle<CR>
 " nerdtree ---------------------------------------- {{{2
 nnoremap <F2> :NERDTreeToggle<CR>
-" powerline --------------------------------------- {{{2
-set t_Co=256
-set term=xterm-256color
 " CtrlP ------------------------------------------- {{{2
 let g:ctrlp_map = '<c-f>'
+" colorscheme ------------------------------------- {{{2
+colorscheme seoul256
 
 
 " [ LANGUAGES ] =================================== {{{1
