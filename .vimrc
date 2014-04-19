@@ -53,6 +53,8 @@ nnoremap <C-l> gt
 "" adjust window size
 nnoremap + <C-W>+
 nnoremap - <C-W>-
+nnoremap <RIGHT> <C-W>>
+nnoremap <LEFT> <C-W><
 "" remove trailing space
 function TrimWhiteSpace()
 	%s/\s*$//
@@ -62,8 +64,6 @@ inoremap <F2> <ESC>:call TrimWhiteSpace()<CR>
 " disable arrow key, enhace HJKL muscle memory
 noremap <UP> <NOP>
 noremap <DOWN> <NOP>
-noremap <RIGHT> <NOP>
-noremap <LEFT> <NOP>
 inoremap <UP> <NOP>
 inoremap <DOWN> <NOP>
 inoremap <RIGHT> <NOP>
