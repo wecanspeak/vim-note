@@ -9,6 +9,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set nowrap
+"" indent
+if has("autocmd")
+    filetype on
+    autocmd Filetype html,aspvbs,javascript,xml setlocal ts=2 sts=2 sw=2 expandtab
+endif
 filetype plugin on
 "" folding
 nnoremap <space> za
@@ -100,6 +105,8 @@ nnoremap <F4> :TagbarToggle<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 " CtrlP ------------------------------------------- {{{2
 let g:ctrlp_map = '<c-f>'
+let g:ctrlp_working_path_mode = 'rw'
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/*.o
 " colorscheme ------------------------------------- {{{2
 colorscheme seoul256
 
