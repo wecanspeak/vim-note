@@ -24,7 +24,6 @@ Note some useful vim stuff.
 * [syntastic](https://github.com/scrooloose/syntastic) - check syntax on the fly
 * [vim-signature](https://github.com/kshenoy/vim-signature) - show marks
 
-
 ## Interesting plugins
 * [vimwiki](https://github.com/vimwiki/vimwiki) - wiki like noting
 * [calendar.vim](https://github.com/itchyny/calendar.vim) - calendar in vim
@@ -32,6 +31,7 @@ Note some useful vim stuff.
 ## Syntax
 * [c.vim](http://www.vim.org/scripts/script.php?script_id=3064) - function highlight
 * [taghighlight](https://bitbucket.org/abudden/taghighlight) - highlight class, types, etc.
+* [vim-markdown](https://github.com/plasticboy/vim-markdown) - highlight markdown and some useful movement keystrokes
 
 ## Colorscheme
 * [vivify](http://bytefluent.com/devify/) - online vim colorscheme generator
