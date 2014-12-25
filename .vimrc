@@ -92,6 +92,8 @@ set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\
 " buffer traverse
 nnoremap <F9> :bn<CR>
 nnoremap <F10> :bp<CR>
+" copy to clipboard
+vnoremap <C-y> "+y
 
 " [ PLUGINS ] ===================================== {{{1
 " pathogen ---------------------------------------- {{{2
