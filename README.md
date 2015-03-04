@@ -23,6 +23,7 @@ Note some useful vim stuff.
 * [matchit](http://vim.sourceforge.net/scripts/script.php?script_id=39) - % jump between tags
 * [syntastic](https://github.com/scrooloose/syntastic) - check syntax on the fly
 * [vim-signature](https://github.com/kshenoy/vim-signature) - show marks
+* [supertab](https://github.com/ervandew/supertab) - auto-complete
 
 ## Interesting plugins
 * [vimwiki](https://github.com/vimwiki/vimwiki) - wiki like noting
