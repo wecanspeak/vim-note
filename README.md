@@ -54,3 +54,6 @@ Note some useful vim stuff.
 
 ### build minimum friendly vim environment
 * source [vimenv.sh](https://github.com/wecanspeak/vim-note/blob/master/vimenv.sh)
+
+### view json file in vim
+`:%!python -m json.tool`
