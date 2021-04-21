@@ -96,6 +96,8 @@ nnoremap <F10> :bp<CR>
 vnoremap <C-y> "+y
 
 " [ PLUGINS ] ===================================== {{{1
+" fugitive ---------------------------------------- {{{2
+nnoremap <leader>gl :Glog -- %<CR>
 " pathogen ---------------------------------------- {{{2
 execute pathogen#infect()
 filetype plugin indent on
